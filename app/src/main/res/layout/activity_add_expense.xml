@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24dp"
+    tools:context=".AddExpenseActivity">
+
+    <EditText
+        android:id="@+id/addExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name" />
+
+    <EditText
+        android:id="@+id/addExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addExpenseName"
+        android:hint="Expense Amount"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/categoryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addExpenseAmount">
+
+        <RadioButton
+            android:id="@+id/entertainmentRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entertainment" />
+
+        <RadioButton
+            android:id="@+id/foodRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food" />
+
+        <RadioButton
+            android:id="@+id/travelRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryBtn"
+        android:text="Add" />
+
+</RelativeLayout>
